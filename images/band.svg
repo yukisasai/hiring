@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 420" width="1400" height="420" role="img" aria-label="帯" preserveAspectRatio="xMidYMid slice">
+<defs><filter id="gn10" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter><radialGradient id="rg11" cx=".5" cy=".5" r=".5">
+        <stop offset="0" stop-color="#2E74F0" stop-opacity=".92"/>
+        <stop offset=".45" stop-color="#2E74F0" stop-opacity=".62"/>
+        <stop offset=".75" stop-color="#2E74F0" stop-opacity=".22"/>
+        <stop offset="1" stop-color="#2E74F0" stop-opacity="0"/>
+      </radialGradient><radialGradient id="rg12" cx=".5" cy=".5" r=".5">
+        <stop offset="0" stop-color="#0F3E9E" stop-opacity=".92"/>
+        <stop offset=".45" stop-color="#0F3E9E" stop-opacity=".62"/>
+        <stop offset=".75" stop-color="#0F3E9E" stop-opacity=".22"/>
+        <stop offset="1" stop-color="#0F3E9E" stop-opacity="0"/>
+      </radialGradient><radialGradient id="lg13" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.165"/>
+      <stop offset=".6" stop-color="#fff" stop-opacity="0.048"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient></defs>
+
+  <rect width="1400" height="420" fill="#1D5FD8"/>
+  <ellipse cx="318.5164613320667" cy="244.1051886129426" rx="946.7085049320594" ry="179.85206642914565" fill="url(#rg11)"/><ellipse cx="457.594599848875" cy="239.55379524116873" rx="797.0065106614784" ry="163.6390536508072" fill="url(#rg12)"/>
+  <ellipse cx="645.7876942761359" cy="117.60000000000001" rx="784.0000000000001" ry="184.8" fill="url(#lg13)"/>
+  <rect width="1400" height="420" filter="url(#gn10)" opacity="0.055" style="mix-blend-mode:multiply"/>
+</svg>

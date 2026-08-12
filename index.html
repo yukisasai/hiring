@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>製造スタッフ募集｜アオゾラ工機（未経験歓迎・熊谷）</title>
+<meta name="description" content="未経験から3年で年収480万。残業月12時間・土日休み・寮あり。works の「実際の1日」を見てから応募できます。">
+<meta name="robots" content="noindex,nofollow">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#1D5FD8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="製造スタッフ募集｜アオゾラ工機">
+<meta property="og:image" content="./images/og.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════════════════
+   アオゾラ工機 — 製造スタッフ採用
+   ──────────────────────────────────────────────────────────────
+   05(転職エージェント)が「生成り＋濃緑＋IBM Plex／落ち着いた
+   情報設計」だったので、同じ採用でも本案は真逆へ振る。
+     骨格 : Zen Kaku Gothic New 900 + Poppins。太く、明るく、若い。
+     色   : 白地に原色の青(#1D5FD8)と黄(#FFD23F)。
+            この2色の組み合わせは既存9本のどれにも無い。
+     signature : 社員の「実際の1日」を時刻で追える横型タイムライン。
+                 現場職の応募をためらう最大の理由は
+                 「何時に終わるのか、休憩はあるのか」が
+                 求人票から読み取れないこと。24時間を可視化して、
+                 残業12時間の意味を体感させる。
+   ══════════════════════════════════════════════════════════════ */
+:root{
+  --white:#FFFFFF; --mist:#EAF0FB; --mist-2:#D3E2FA;
+  --blue:#1D5FD8; --blue-d:#154AAB; --yellow:#FFD23F;
+  --ink:#141A26; --ink-2:#5B6577;
+  --line:rgba(20,26,38,.12); --line-w:rgba(255,255,255,.2);
+
+  --f-ja:'Zen Kaku Gothic New',system-ui,-apple-system,sans-serif;
+  --f-en:'Poppins',system-ui,sans-serif;
+
+  --fs-hero:clamp(1.9rem,7.4vw,3.3rem);
+  --fs-h2:clamp(1.4rem,5.4vw,2.15rem);
+  --fs-h3:clamp(1.05rem,4vw,1.3rem);
+  --fs-lead:clamp(.9375rem,3.6vw,1.0625rem);
+  --fs-sm:.8125rem; --fs-xs:.6875rem;
+
+  --gut:1.375rem; --sect:clamp(3.75rem,12vw,6.5rem);
+  --well:640px; --wide:1100px; --bar:78px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--f-ja);font-weight:500;
+  font-size:.9375rem;line-height:1.88;padding-bottom:var(--bar);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+.sect{padding:var(--sect) var(--gut)}
+.sect--mist{background:var(--mist)}
+.sect--blue{background:var(--blue);color:#fff}
+.well{max-width:var(--well);margin-inline:auto}
+.wide{max-width:var(--wide);margin-inline:auto}
+
+.eyebrow{font-family:var(--f-en);font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--blue);margin:0 0 .6rem;display:inline-block;
+  background:var(--yellow);padding:.25rem .7rem;border-radius:4px}
+.sect--blue .eyebrow{background:var(--yellow);color:var(--blue)}
+.h2{font-weight:900;font-size:var(--fs-h2);line-height:1.42;letter-spacing:-.015em;margin:0 0 .9rem}
+.h2 em{font-style:normal;color:var(--blue);
+  background:linear-gradient(transparent 62%,var(--yellow) 62%,var(--yellow) 92%,transparent 92%)}
+.sect--blue .h2{color:#fff}
+.sect--blue .h2 em{color:var(--yellow);background:none}
+.lead{font-size:var(--fs-lead);color:var(--ink-2);margin:0 0 2.25rem}
+.sect--blue .lead{color:rgba(255,255,255,.82)}
+.fine{font-size:var(--fs-sm);line-height:1.85;color:var(--ink-2);margin:1.5rem 0 0}
+.sect--blue .fine{color:rgba(255,255,255,.7)}
+
+.btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.05rem;
+  width:100%;min-height:68px;padding:.9rem 1.5rem;border:0;border-radius:10px;
+  background:var(--yellow);color:var(--ink);font-family:var(--f-ja);font-weight:900;font-size:1.0625rem;
+  letter-spacing:.01em;text-decoration:none;cursor:pointer;
+  box-shadow:0 5px 0 #D9AE18;transition:transform .13s ease,box-shadow .13s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 0 #D9AE18}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #D9AE18}
+.btn small{font-family:var(--f-en);font-size:.6875rem;font-weight:600;letter-spacing:.08em;opacity:.62}
+.btn[disabled]{opacity:.5;cursor:not-allowed;transform:none}
+
+/* ── ヘッダー ── */
+.hd{display:flex;align-items:center;justify-content:space-between;padding:.9rem var(--gut);border-bottom:3px solid var(--blue)}
+.hd__ja{font-weight:900;font-size:1.1rem;letter-spacing:.04em}
+.hd__ja span{display:block;font-family:var(--f-en);font-size:.5rem;font-weight:600;letter-spacing:.16em;color:var(--ink-2);margin-top:-.1rem}
+.hd__r{font-family:var(--f-en);font-size:.6875rem;font-weight:700;background:var(--blue);color:#fff;padding:.35rem .75rem;border-radius:4px}
+
+/* ── ヒーロー ── */
+.hero{position:relative;overflow:hidden}
+.hero__bg{position:absolute;inset:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover}
+.hero__in{position:relative;padding:2.75rem var(--gut) var(--sect)}
+.hero__kick{display:inline-block;background:var(--blue);color:#fff;font-family:var(--f-en);font-size:.75rem;
+  font-weight:700;padding:.35rem .85rem;border-radius:4px;margin-bottom:1rem}
+.hero__ttl{font-weight:900;font-size:var(--fs-hero);line-height:1.34;letter-spacing:-.02em;margin:0 0 1rem}
+.hero__ttl em{font-style:normal;color:var(--blue)}
+.hero__sub{font-size:var(--fs-lead);color:var(--ink-2);margin:0 0 1.75rem;max-width:32em}
+.hero__kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin:0 0 1.75rem;padding:0;list-style:none}
+.hero__kpi li{background:#fff;border:2px solid var(--blue);border-radius:10px;padding:.8rem .9rem}
+.hero__kpi .k{font-family:var(--f-en);font-size:.5625rem;font-weight:600;letter-spacing:.08em;color:var(--ink-2);margin:0 0 .2rem}
+.hero__kpi .v{font-family:var(--f-en);font-size:1.5rem;font-weight:700;line-height:1;margin:0;color:var(--blue)}
+.hero__kpi .v i{font-style:normal;font-family:var(--f-ja);font-size:.75rem;font-weight:700;color:var(--ink)}
+.hero__cta{max-width:400px}
+.hero__note{margin:.85rem 0 0;font-size:var(--fs-sm);color:var(--ink-2)}
+@media(min-width:900px){.hero__in{max-width:var(--wide);margin-inline:auto;padding-block:3.5rem var(--sect)}
+  .hero__ttl{max-width:15ch}.hero__kpi{grid-template-columns:repeat(4,1fr);max-width:760px}}
+
+/* ══ シグネチャー : 1日のタイムライン ══ */
+.day{background:#fff;border:2px solid var(--blue);border-radius:16px;overflow:hidden}
+.day__tabs{display:flex;border-bottom:2px solid var(--blue)}
+.day__tab{flex:1;padding:.85rem .5rem;border:0;background:var(--mist);color:var(--ink-2);
+  font-family:var(--f-ja);font-weight:700;font-size:.8125rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease}
+.day__tab[aria-selected="true"]{background:var(--blue);color:#fff}
+.day__body{padding:1.35rem 1.15rem}
+/* 24時間バー。勤務・休憩・残業・自由時間を色で分ける */
+.day__bar{display:flex;height:26px;border-radius:6px;overflow:hidden;margin-bottom:.55rem}
+.day__seg{height:100%}
+.day__seg[data-t="work"]{background:var(--blue)}
+.day__seg[data-t="break"]{background:var(--yellow)}
+.day__seg[data-t="over"]{background:#F2683C}
+.day__seg[data-t="free"]{background:var(--mist-2)}
+.day__scale{display:flex;justify-content:space-between;font-family:var(--f-en);font-size:.5625rem;
+  font-weight:600;color:var(--ink-2);margin-bottom:1.1rem}
+.day__legend{display:flex;flex-wrap:wrap;gap:.9rem;font-size:.6875rem;color:var(--ink-2);margin-bottom:1.25rem}
+.day__legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.day__list{padding:0;margin:0;list-style:none;display:grid;gap:.9rem}
+.day__row{display:grid;grid-template-columns:3.6rem 1fr;gap:.9rem;align-items:start}
+.day__t{font-family:var(--f-en);font-size:.8125rem;font-weight:700;color:var(--blue);padding-top:.1rem}
+.day__h{font-weight:900;font-size:.9375rem;margin:0 0 .15rem}
+.day__d{margin:0;font-size:var(--fs-sm);color:var(--ink-2);line-height:1.8}
+.day__sum{margin-top:1.25rem;padding:.95rem 1rem;background:var(--mist);border-radius:10px;
+  font-size:var(--fs-sm);line-height:1.85}
+.day__sum b{color:var(--blue)}
+
+/* ── 数字 ── */
+.nums{display:grid;gap:1px;background:var(--line-w);border:1px solid var(--line-w);border-radius:12px;overflow:hidden;padding:0;margin:0;list-style:none}
+.num{background:var(--blue);padding:1.2rem 1rem;text-align:center}
+.num .v{font-family:var(--f-en);font-size:2rem;font-weight:700;line-height:1;margin:0 0 .3rem;color:var(--yellow)}
+.num .v i{font-style:normal;font-family:var(--f-ja);font-size:.8125rem;font-weight:700;color:#fff}
+.num .k{font-size:var(--fs-xs);margin:0;color:rgba(255,255,255,.8);line-height:1.6}
+@media(min-width:640px){.nums{grid-template-columns:repeat(4,1fr)}}
+
+/* ── 社員 ── */
+.emps{display:grid;gap:1.5rem;padding:0;margin:0;list-style:none}
+.emp__pic{aspect-ratio:7/9;overflow:hidden;border-radius:12px;margin-bottom:.9rem;background:var(--mist-2)}
+.emp__pic img{width:100%;height:100%;object-fit:cover}
+.emp__n{font-weight:900;font-size:var(--fs-h3);margin:0 0 .1rem}
+.emp__n span{display:block;font-family:var(--f-en);font-size:.625rem;font-weight:600;color:var(--blue);margin-top:.2rem}
+.emp__r{font-size:var(--fs-sm);color:var(--ink-2);margin:0 0 .55rem}
+.emp__b{margin:0;font-size:var(--fs-sm);color:var(--ink-2);line-height:1.85}
+.emp__pay{display:inline-block;margin-top:.7rem;font-family:var(--f-en);font-size:.75rem;font-weight:700;
+  background:var(--yellow);padding:.25rem .65rem;border-radius:4px}
+@media(min-width:760px){.emps{grid-template-columns:repeat(3,1fr)}}
+
+/* ── 待遇 ── */
+.perks{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;padding:0;margin:0;list-style:none}
+.perk{background:#fff;padding:1.15rem 1.1rem}
+.perk__t{font-weight:900;font-size:.9375rem;margin:0 0 .25rem;display:flex;align-items:center;gap:.5rem}
+.perk__t::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--blue);flex:none}
+.perk__d{margin:0;font-size:var(--fs-sm);color:var(--ink-2);line-height:1.8}
+@media(min-width:760px){.perks{grid-template-columns:1fr 1fr}}
+
+/* ── 募集要項 ── */
+.req-tbl{width:100%;border-collapse:collapse;font-size:var(--fs-sm)}
+.req-tbl th,.req-tbl td{border:1px solid var(--line);padding:.85rem .9rem;text-align:left;vertical-align:top;line-height:1.8}
+.req-tbl th{background:var(--mist);font-weight:700;width:7.5em;white-space:nowrap}
+.req-tbl td{color:var(--ink-2)}
+
+/* ── FAQ ── */
+.faq details{border:2px solid var(--line);border-radius:10px;margin-bottom:.7rem;overflow:hidden;background:#fff}
+.faq summary{display:grid;grid-template-columns:1.4rem 1fr 15px;align-items:start;gap:.75rem;padding:1.1rem 1.15rem;
+  font-weight:900;font-size:.9375rem;line-height:1.7;cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:'Q';font-family:var(--f-en);font-size:1rem;font-weight:700;color:var(--blue);line-height:1.6}
+.faq summary::after{content:'';margin-top:.6em;width:10px;height:10px;border-right:2px solid var(--ink-2);
+  border-bottom:2px solid var(--ink-2);transform:rotate(45deg);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq__a{padding:0 1.15rem 1.2rem 3.3rem;font-size:var(--fs-sm);line-height:1.9;color:var(--ink-2)}
+
+/* ── フォーム ── */
+.form{display:grid;gap:1.1rem}
+.fld label{display:block;font-size:var(--fs-sm);font-weight:900;margin-bottom:.4rem}
+.req,.opt{display:inline-block;margin-left:.45rem;padding:.06rem .5rem;border-radius:4px;
+  font-family:var(--f-en);font-size:.625rem;font-weight:700;vertical-align:.1em}
+.req{background:var(--blue);color:#fff}
+.opt{background:var(--mist-2);color:var(--ink-2)}
+.fld input,.fld select,.fld textarea{width:100%;padding:.9rem 1rem;border:2px solid var(--line);border-radius:10px;
+  background:#fff;color:var(--ink);font-family:inherit;font-size:1rem;line-height:1.6}
+.fld textarea{min-height:110px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--blue);outline:none}
+.fld .err{display:none;margin:.35rem 0 0;font-size:var(--fs-sm);color:#B3261E}
+.fld[data-bad="true"] input,.fld[data-bad="true"] select{border-color:#B3261E}
+.fld[data-bad="true"] .err{display:block}
+.privacy{font-size:var(--fs-sm);line-height:1.85;color:var(--ink-2);margin:0}
+.status{display:none;padding:.9rem 1rem;border-radius:10px;font-size:var(--fs-sm);line-height:1.8;background:#FBEAE8;color:#8C2B20}
+.status[data-on]{display:block}
+.done{display:none;text-align:center;padding:2.75rem 1.25rem;background:#fff;border:3px solid var(--yellow);border-radius:16px}
+.done[data-on="true"]{display:block}
+.done__m{width:56px;height:56px;margin:0 auto;border-radius:50%;background:var(--blue);display:grid;place-items:center;color:#fff}
+.done h3{font-weight:900;font-size:var(--fs-h3);margin:1.1rem 0 .5rem}
+.done p{margin:0;font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* ── フッター ── */
+.ft{background:var(--ink);color:rgba(255,255,255,.78);padding:var(--sect) var(--gut) 2.5rem;text-align:center}
+.ft__ja{font-weight:900;font-size:1.3rem;letter-spacing:.06em;color:#fff}
+.ft__ja span{display:block;font-family:var(--f-en);font-size:.5rem;font-weight:600;letter-spacing:.18em;color:var(--yellow);margin-top:.1rem}
+.ft__pic{aspect-ratio:3/2;overflow:hidden;border-radius:12px;margin:1.75rem 0}
+.ft__pic img{width:100%;height:100%;object-fit:cover}
+.ft dl{display:grid;grid-template-columns:5.5em 1fr;gap:.5rem 1rem;margin:0 auto 2rem;max-width:430px;
+  font-size:var(--fs-sm);text-align:left;line-height:1.8}
+.ft dt{color:rgba(255,255,255,.5)}
+.ft dd{margin:0}
+.ft__cp{font-family:var(--f-en);font-size:.625rem;letter-spacing:.1em;opacity:.55;margin:0}
+
+/* ── 固定バー ── */
+.bar{position:fixed;inset:auto 0 0 0;z-index:40;display:flex;align-items:center;gap:.7rem;
+  padding:.55rem var(--gut);padding-bottom:calc(.55rem + env(safe-area-inset-bottom,0px));
+  background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:3px solid var(--blue);
+  transform:translateY(115%);transition:transform .28s cubic-bezier(.22,1,.36,1)}
+.bar[data-on="true"]{transform:none}
+.bar__p{flex:none;line-height:1.2}
+.bar__p b{display:block;font-family:var(--f-en);font-size:1.3rem;font-weight:700;color:var(--blue)}
+.bar__p span{font-family:var(--f-en);font-size:.5625rem;font-weight:600;color:var(--ink-2)}
+.bar .btn{min-height:56px;font-size:.9375rem}
+@media(min-width:620px){.bar{justify-content:center}.bar .btn{max-width:340px}}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.22,1,.36,1)}
+.rv[data-in="true"]{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd__ja">アオゾラ工機<span>AOZORA KOKI</span></div>
+  <span class="hd__r">未経験OK</span>
+</header>
+
+<!-- ════ ヒーロー ════ -->
+<section class="hero">
+  <div class="hero__bg"><img src="./images/hero.svg" alt="" width="1400" height="1000" fetchpriority="high"></div>
+  <div class="hero__in">
+    <span class="hero__kick">2026年 通年採用</span>
+    <h1 class="hero__ttl">残業は月<em>12時間</em>。<br>これが本当の数字です。</h1>
+    <p class="hero__sub">求人票の「残業ほぼなし」を信じられない方へ。過去12ヶ月の実績値をそのまま出します。下のタイムラインで、社員の1日を時刻まで確認してから応募してください。</p>
+    <ul class="hero__kpi">
+      <li><p class="k">START</p><p class="v">228<i>万円〜</i></p></li>
+      <li><p class="k">3RD YEAR AVG</p><p class="v">480<i>万円</i></p></li>
+      <li><p class="k">OVERTIME</p><p class="v">12<i>h／月</i></p></li>
+      <li><p class="k">TURNOVER</p><p class="v">6<i>%</i></p></li>
+    </ul>
+    <div class="hero__cta"><a class="btn" href="#apply" data-cta="hero">応募する（3分）<small>NO RESUME NEEDED</small></a></div>
+    <p class="hero__note">履歴書は不要です。まず工場を見学するだけでも構いません。</p>
+  </div>
+</section>
+
+<!-- ════ シグネチャー : 1日のタイムライン ════ -->
+<section class="sect" id="day">
+  <div class="well rv">
+    <p class="eyebrow">A day at work</p>
+    <h2 class="h2">何時に終わるのか、<br><em>先に見せます</em>。</h2>
+    <p class="lead">現場の仕事を迷う一番の理由は、終わる時刻が分からないことだと思っています。3人分の実際の1日を、24時間の帯で出しました。</p>
+
+    <div class="day">
+      <div class="day__tabs" role="tablist" aria-label="社員を選択">
+        <button class="day__tab" role="tab" aria-selected="true"  data-d="0">入社1年目</button>
+        <button class="day__tab" role="tab" aria-selected="false" data-d="1">5年目・班長</button>
+        <button class="day__tab" role="tab" aria-selected="false" data-d="2">子育て中・時短</button>
+      </div>
+      <div class="day__body">
+        <div class="day__bar" id="bar24" aria-hidden="true"></div>
+        <div class="day__scale"><span>0:00</span><span>6:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div>
+        <p class="day__legend">
+          <span><i style="background:#1D5FD8"></i>勤務</span>
+          <span><i style="background:#FFD23F"></i>休憩</span>
+          <span><i style="background:#F2683C"></i>残業</span>
+          <span><i style="background:#D3E2FA"></i>自由時間</span>
+        </p>
+        <ul class="day__list" id="daylist"></ul>
+        <p class="day__sum" id="daysum"></p>
+      </div>
+    </div>
+    <p class="fine">上記は2025年の実績にもとづく代表的な1日です。繁忙期（3月・9月）は残業が月20時間程度まで増えます。その分は全額支給し、代休の取得も可能です。</p>
+  </div>
+</section>
+
+<!-- ════ 数字 ════ -->
+<section class="sect sect--mist" id="numbers">
+  <div class="wide rv">
+    <p class="eyebrow">By the numbers</p>
+    <h2 class="h2">都合の悪い数字も<br>出しています。</h2>
+    <p class="lead">離職率6%は良い数字ですが、平均年齢は上がっており、若手が足りていないのが実情です。</p>
+    <ul class="nums">
+      <li class="num"><p class="v">6<i>%</i></p><p class="k">年間離職率<br>（製造部門）</p></li>
+      <li class="num"><p class="v">98<i>%</i></p><p class="k">有給取得率<br>（2025年実績）</p></li>
+      <li class="num"><p class="v">44<i>歳</i></p><p class="k">平均年齢<br>（若手を増やしたい）</p></li>
+      <li class="num"><p class="v">72<i>%</i></p><p class="k">未経験入社の割合<br>（直近3年）</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════ 社員 ════ -->
+<section class="sect" id="employees">
+  <div class="wide rv">
+    <p class="eyebrow">People</p>
+    <h2 class="h2">みんな<em>未経験</em>から<br>始めています。</h2>
+    <p class="lead">年収も本人の許可を得て出しています。</p>
+    <ul class="emps">
+      <li><div class="emp__pic"><img src="./images/e-01.svg" alt="社員 佐久間" width="700" height="900" loading="lazy"></div>
+        <h3 class="emp__n">佐久間 大地<span>DAICHI SAKUMA / 3年目</span></h3><p class="emp__r">前職：飲食店ホール</p>
+        <p class="emp__b">立ち仕事という点では前職と同じですが、終わる時刻が読めるのが決定的に違います。友達との約束を入れられるようになりました。</p>
+        <span class="emp__pay">年収 452万円</span></li>
+      <li><div class="emp__pic"><img src="./images/e-02.svg" alt="社員 林" width="700" height="900" loading="lazy"></div>
+        <h3 class="emp__n">林 美和<span>MIWA HAYASHI / 8年目・班長</span></h3><p class="emp__r">前職：事務（派遣）</p>
+        <p class="emp__b">力仕事はほとんどありません。5kg以上のものは機械が運びます。班長になってからは、人の教え方のほうが難しいです。</p>
+        <span class="emp__pay">年収 561万円</span></li>
+      <li><div class="emp__pic"><img src="./images/e-03.svg" alt="社員 呉" width="700" height="900" loading="lazy"></div>
+        <h3 class="emp__n">呉 建国<span>JIANGUO WU / 6年目</span></h3><p class="emp__r">前職：留学生・アルバイト</p>
+        <p class="emp__b">日本語は今も完璧ではありません。作業手順書に中国語版とベトナム語版があるので、最初から困りませんでした。</p>
+        <span class="emp__pay">年収 498万円</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════ 待遇 ════ -->
+<section class="sect sect--blue" id="perks">
+  <div class="wide rv">
+    <p class="eyebrow">Conditions</p>
+    <h2 class="h2">気になるところ、<br><em>ぜんぶ書きます</em>。</h2>
+    <ul class="perks">
+      <li class="perk"><h3 class="perk__t">土日休み（年間休日122日）</h3><p class="perk__d">カレンダー通りです。GW・お盆・年末年始は長期休暇になります。</p></li>
+      <li class="perk"><h3 class="perk__t">寮あり（月1.2万円）</h3><p class="perk__d">工場から徒歩8分。単身用ワンルーム、家電付き。入寮の空きは現在3室です。</p></li>
+      <li class="perk"><h3 class="perk__t">資格取得の費用は全額会社負担</h3><p class="perk__d">フォークリフト、玉掛け、クレーンなど。取得すると手当が月3,000〜8,000円つきます。</p></li>
+      <li class="perk"><h3 class="perk__t">交替勤務なし</h3><p class="perk__d">夜勤はありません。生活リズムは崩れません。</p></li>
+      <li class="perk"><h3 class="perk__t">冷暖房完備</h3><p class="perk__d">2023年に全ラインへスポットクーラーを導入しました。夏場の室温は概ね28℃以下です。</p></li>
+      <li class="perk"><h3 class="perk__t">賞与 年2回（2025年実績 4.2ヶ月）</h3><p class="perk__d">業績連動です。過去5年は3.8〜4.5ヶ月の範囲で推移しています。</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════ 募集要項 ════ -->
+<section class="sect sect--mist" id="detail">
+  <div class="well rv">
+    <p class="eyebrow">Requirements</p>
+    <h2 class="h2">募集要項</h2>
+    <table class="req-tbl">
+      <tbody>
+        <tr><th>職種</th><td>製造スタッフ（機械オペレーター・検査・組立）</td></tr>
+        <tr><th>雇用形態</th><td>正社員（試用期間3ヶ月・条件の変更なし）</td></tr>
+        <tr><th>給与</th><td>月給19万円〜（未経験）／経験・資格により優遇<br>3年目の平均年収 480万円（賞与含む）</td></tr>
+        <tr><th>勤務時間</th><td>8:15–17:15（実働8時間・休憩60分）</td></tr>
+        <tr><th>休日</th><td>土日祝・年間休日122日・有給10日〜</td></tr>
+        <tr><th>勤務地</th><td>埼玉県熊谷市三ヶ尻1234（マイカー通勤可・駐車場無料）</td></tr>
+        <tr><th>応募資格</th><td>学歴・経験不問／要普通自動車免許（AT可）<br>日本語での日常会話ができる方</td></tr>
+        <tr><th>選考</th><td>書類なし → 工場見学＋面接1回 → 内定（最短5日）</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ════ フォーム ════ -->
+<section class="sect" id="apply">
+  <div class="well rv">
+    <p class="eyebrow">Apply</p>
+    <h2 class="h2">応募・見学のお申し込み</h2>
+    <p class="lead">履歴書は不要です。まず見学だけ、でも構いません。2営業日以内に連絡します。</p>
+
+    <div class="done" id="done" role="status" aria-live="polite">
+      <div class="done__m"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3>受け付けました</h3>
+      <p>2営業日以内に、採用担当よりご連絡します。<br>現在の勤務先への連絡は一切いたしません。</p>
+    </div>
+
+    <form class="form" id="form" novalidate>
+      <div class="fld" data-f="name"><label for="i-name">お名前<span class="req">必須</span></label><input id="i-name" name="name" type="text" autocomplete="name" placeholder="山田 太郎"><p class="err">お名前を入力してください</p></div>
+      <div class="fld" data-f="tel"><label for="i-tel">電話番号<span class="req">必須</span></label><input id="i-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="09012345678"><p class="err">電話番号を確認してください</p></div>
+      <div class="fld" data-f="email"><label for="i-email">メールアドレス<span class="req">必須</span></label><input id="i-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="example@mail.com"><p class="err">メールアドレスを確認してください</p></div>
+      <div class="fld" data-f="kind"><label for="i-kind">希望する内容<span class="req">必須</span></label>
+        <select id="i-kind" name="kind"><option value="">選んでください</option><option>応募したい</option><option>まず工場を見学したい</option><option>条件について質問したい</option></select>
+        <p class="err">選択してください</p></div>
+      <div class="fld"><label for="i-exp">これまでの仕事<span class="opt">任意</span></label><input id="i-exp" name="experience" type="text" placeholder="例：飲食店ホール 3年"></div>
+      <div class="fld"><label for="i-msg">気になっていること<span class="opt">任意</span></label><textarea id="i-msg" name="message" placeholder="体力、寮の空き、シフトなど"></textarea></div>
+      <input type="hidden" name="pageUrl" id="i-url">
+      <div class="sr" aria-hidden="true"><label for="i-hp">入力しないでください</label><input id="i-hp" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+      <p class="status" id="status" role="alert"></p>
+      <button type="submit" class="btn" data-cta="form">この内容で送信する<small>REPLY IN 2 DAYS</small></button>
+      <p class="privacy">ご記入いただいた情報は、採用選考にのみ使用します。現在の勤務先を含む第三者への連絡・提供は行いません。</p>
+    </form>
+  </div>
+</section>
+
+<!-- ════ FAQ ════ -->
+<section class="sect sect--mist" id="faq">
+  <div class="well rv">
+    <p class="eyebrow">FAQ</p>
+    <h2 class="h2">よくある質問</h2>
+    <div class="faq">
+      <details><summary>体力に自信がありません。</summary><div class="faq__a">5kgを超えるものは機械が運びます。手で持ち上げる作業は設計上入っていません。ただし立ち仕事なので、1日7時間ほど立っています。腰に持病がある方は、見学時にご相談ください。</div></details>
+      <details><summary>本当に残業は月12時間ですか。</summary><div class="faq__a">2025年の製造部門平均が11.8時間でした。ただし繁忙期の3月と9月は20時間前後まで増えます。月ごとの実績表を見学時にお見せします。</div></details>
+      <details><summary>40代・50代でも採用されますか。</summary><div class="faq__a">直近3年の未経験入社のうち、4割が40代以上です。年齢による選考差はありません。</div></details>
+      <details><summary>外国籍でも応募できますか。</summary><div class="faq__a">就労可能な在留資格があれば応募できます。現在、5カ国の社員が在籍しています。作業手順書は日本語・英語・中国語・ベトナム語版があります。</div></details>
+      <details><summary>見学だけでも大丈夫ですか。</summary><div class="faq__a">問題ありません。見学のみで終わる方が年に20名ほどいます。その場で応募を迫ることはしません。所要は1時間程度です。</div></details>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="well">
+    <div class="ft__ja">アオゾラ工機<span>AOZORA KOKI CO., LTD.</span></div>
+    <div class="ft__pic"><img src="./images/plant.svg" alt="工場" width="1200" height="800" loading="lazy"></div>
+    <dl>
+      <dt>本社工場</dt><dd>埼玉県熊谷市三ヶ尻1234</dd>
+      <dt>設立</dt><dd>1974年</dd>
+      <dt>従業員</dt><dd>168名（2026年4月現在）</dd>
+      <dt>事業内容</dt><dd>精密機械部品の製造・加工</dd>
+      <dt>採用窓口</dt><dd>048-000-5678（平日 9:00–17:00）</dd>
+    </dl>
+    <p class="ft__cp">© AOZORA KOKI — 架空クライアントによる制作サンプルです</p>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <div class="bar__p"><b>月12h</b><span>OVERTIME / REAL DATA</span></div>
+  <a class="btn" href="#apply" data-cta="bar">応募・見学を申し込む</a>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var track=function(n,p){if(typeof window.gtag==='function')window.gtag(n,p||{});};
+
+  /* ── 1日のタイムライン ────────────────────────────────
+     帯は「開始時刻(h)・長さ(h)・種別」の配列から生成する。
+     24時間で必ず埋まるよう、描画前に合計を検算する。      */
+  var DAYS=[
+    { sum:'勤務8時間＋残業0.5時間。<b>17:45には工場を出ています。</b>',
+      segs:[[0,6.5,'free'],[6.5,1.75,'free'],[8.25,3.75,'work'],[12,1,'break'],[13,4.25,'work'],[17.25,.5,'over'],[17.75,6.25,'free']],
+      rows:[
+        ['8:15','ラジオ体操と朝礼','その日の生産計画と、前日に出た不具合の共有。10分で終わります。'],
+        ['8:25','機械の立ち上げ・段取り','担当する機械の設定を確認します。1年目は先輩と2人で行います。'],
+        ['12:00','昼休憩','社員食堂で400円。持参の方は休憩室を使います。'],
+        ['13:00','午後の稼働','午前と同じ流れです。15時に10分の小休憩があります。'],
+        ['17:15','片づけ・翌日の段取り','ここが残業になることがあります。平均で1日30分程度です。'],
+        ['17:45','退勤','駐車場から自宅まで、平均15分の距離に住む社員が多いです。']
+      ]},
+    { sum:'勤務8時間＋残業1時間。<b>班長は朝が30分早く、夕方に打合せが入ります。</b>',
+      segs:[[0,6,'free'],[6,1.75,'free'],[7.75,4.25,'work'],[12,1,'break'],[13,4.25,'work'],[17.25,1,'over'],[18.25,5.75,'free']],
+      rows:[
+        ['7:45','ライン確認','班長は朝礼の前に、当日の人員配置と機械の状態を確認します。'],
+        ['8:15','朝礼・作業開始','班のメンバーへ配置を伝えます。'],
+        ['12:00','昼休憩','新人と同じテーブルで食べるようにしています。'],
+        ['13:00','午後の稼働・巡回','自分の担当機に加えて、班全体を見ます。'],
+        ['17:15','日報と翌日調整','他班との打合せが入ると1時間程度になります。'],
+        ['18:15','退勤','週2回は定時で上がっています。']
+      ]},
+    { sum:'勤務6時間・残業なし。<b>16時に上がって、保育園に間に合います。</b>',
+      segs:[[0,6.5,'free'],[6.5,2.25,'free'],[8.75,3.25,'work'],[12,.75,'break'],[12.75,3.25,'work'],[16,8,'free']],
+      rows:[
+        ['8:45','時差出勤で作業開始','子どもを送ってから来られるよう、30分遅い開始にしています。'],
+        ['12:00','昼休憩','45分に短縮して、その分早く上がります。'],
+        ['12:45','午後の稼働','検査工程を担当。座り作業が中心です。'],
+        ['16:00','退勤','残業はゼロで固定しています。急な生産増でも変更しません。'],
+        ['16:30','保育園へお迎え','工場から園まで車で10分です。']
+      ]}
+  ];
+
+  var tabs=[].slice.call(document.querySelectorAll('.day__tab')),
+      bar24=document.getElementById('bar24'), list=document.getElementById('daylist'),
+      sum=document.getElementById('daysum'), fired=false;
+
+  function draw(i){
+    var d=DAYS[i];
+    // 24時間ぶん埋まっているか検算（欠けていたら自由時間で埋める）
+    var total=d.segs.reduce(function(a,s){return a+s[1];},0);
+    var segs=d.segs.slice();
+    if(total<23.99) segs.push([total,24-total,'free']);
+
+    bar24.innerHTML=segs.map(function(s){
+      return '<span class="day__seg" data-t="'+s[2]+'" style="width:'+(s[1]/24*100)+'%"></span>';
+    }).join('');
+    list.innerHTML=d.rows.map(function(r){
+      return '<li class="day__row"><span class="day__t">'+r[0]+'</span><div>'+
+             '<p class="day__h">'+r[1]+'</p><p class="day__d">'+r[2]+'</p></div></li>';
+    }).join('');
+    sum.innerHTML=d.sum;
+    tabs.forEach(function(t,n){t.setAttribute('aria-selected',String(n===i));});
+    if(!fired){fired=true;track('daytimeline_view');}
+  }
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){draw(i);track('daytimeline_switch',{tab:i});});});
+  draw(0);
+
+  /* ── 固定バー ── */
+  var bar=document.getElementById('bar'),hero=document.querySelector('.hero'),ap=document.getElementById('apply');
+  function tb(){var p=hero.getBoundingClientRect().bottom<0,a=ap.getBoundingClientRect().top<window.innerHeight*0.85;
+    bar.setAttribute('data-on',(p&&!a)?'true':'false');}
+  tb();window.addEventListener('scroll',tb,{passive:true});window.addEventListener('resize',tb,{passive:true});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.setAttribute('data-in','true');io.unobserve(e.target);}});},{rootMargin:'0px 0px -12% 0px'});
+  [].slice.call(document.querySelectorAll('.rv')).forEach(function(el){io.observe(el);});
+
+  [].slice.call(document.querySelectorAll('[data-cta]')).forEach(function(el){
+    el.addEventListener('click',function(){track('cta_click',{position:el.dataset.cta});});});
+
+  /* ── フォーム ── */
+  var form=document.getElementById('form'),st=document.getElementById('status'),done=document.getElementById('done'),started=false;
+  form.addEventListener('input',function(){if(!started){started=true;track('form_start');}});
+  function bad(n,is){var f=form.querySelector('[data-f="'+n+'"]');if(f)f.setAttribute('data-bad',String(is));}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var btn=form.querySelector('button[type=submit]'),fd=new FormData(form),d={};
+    fd.forEach(function(v,k){d[k]=String(v);});d.pageUrl=location.href;
+    var ok=true;
+    [['name',d.name.trim().length>0],
+     ['tel',/^[0-9+\-() ]{10,}$/.test(d.tel.trim())],
+     ['email',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email.trim())],
+     ['kind',d.kind.trim().length>0]
+    ].forEach(function(p){bad(p[0],!p[1]);if(!p[1])ok=false;});
+    if(!ok){var f=form.querySelector('[data-bad="true"] input,[data-bad="true"] select');if(f)f.focus();return;}
+    btn.disabled=true;btn.textContent='送信中…';st.removeAttribute('data-on');
+    fetch('/api/applications',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){if(!r.ok)throw 0;
+        track('form_submit',{kind:d.kind});
+        form.style.display='none';done.setAttribute('data-on','true');
+        done.scrollIntoView({behavior:'smooth',block:'center'});})
+      .catch(function(){st.setAttribute('data-on','');
+        st.textContent='送信できませんでした。お手数ですが 048-000-5678 までお電話ください。';
+        btn.disabled=false;btn.textContent='この内容で送信する';});
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="実写差し替え" preserveAspectRatio="xMidYMid slice">
+<defs></defs>
+
+  <rect width="1200" height="800" fill="#EAF0FB"/>
+  <rect x="24" y="24" width="1152" height="752"
+        fill="none" stroke="#1D5FD8" stroke-width="4" stroke-dasharray="24 16" opacity=".6"/>
+  <circle cx="600" cy="328" r="88" fill="#141A26" opacity=".16"/>
+  <path d="M 440 560 a 160 144 0 0 1 320 0 z" fill="#141A26" opacity=".16"/>
+  <text x="600" y="648" text-anchor="middle" font-family="'Hiragino Sans',sans-serif"
+        font-size="41.6" font-weight="600" fill="#141A26" fill-opacity=".55">実写差し替え</text>
+  <text x="600" y="704" text-anchor="middle" font-family="'Hiragino Sans',sans-serif"
+        font-size="30.4" fill="#141A26" fill-opacity=".38">工場内</text>
+  <text x="600" y="768" text-anchor="middle" font-family="'Jost',sans-serif"
+        font-size="27.200000000000003" letter-spacing="11.200000000000001" fill="#141A26" fill-opacity=".3">1200 × 800</text>
+</svg>
